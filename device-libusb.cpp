@@ -61,7 +61,7 @@ int connect_device(int vendor_id, int product_id) {
 		fprintf(stderr, "Init error: %s\n", libusb_strerror((libusb_error)result));
 		return 1;
 	}
-	libusb_set_debug(context, 3);
+	libusb_set_option(context, LIBUSB_OPTION_LOG_LEVEL, 3);
 
 	libusb_device **list = NULL;
 	libusb_device *found = NULL;
