@@ -11,7 +11,7 @@
 #include <chrono>
 #include <sys/stat.h>
 #include <linux/usb/ch9.h>
-#include <jsoncpp/json/json.h>
+#include <json/json.h>
 
 extern int verbose_level;
 extern bool please_stop_ep0;
